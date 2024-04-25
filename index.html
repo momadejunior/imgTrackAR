@@ -56,19 +56,32 @@
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets>
-            <video src="mov_bbb.mp4"
-                preload="auto" id="vid" response-type="arraybuffer" loop
-                crossorigin webkit-playsinline autoplay muted playsinline>
+            <video     
+                id="vid" 
+                src="ninja_flow.mp4"
+                preload="auto" 
+                response-type="arraybuffer" 
+                loop
+                crossorigin 
+                webkit-playsinline 
+                autoplay 
+                muted 
+                playsinline>
             </video>
         </a-assets>
 
         <a-nft
             videohandler
-            type='nft' url='../data/prev'
-            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+            type='nft' 
+            url='../data/prev'
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5"
         >
             <a-video
                 src="#vid"
+                scale='2 3 1'
                 position='50 150 -100'
                 rotation='90 0 180'
                 width='300'
